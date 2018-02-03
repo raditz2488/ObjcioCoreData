@@ -20,6 +20,7 @@
 		81C660A52025C72100DD3515 /* MoodsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660A42025C72100DD3515 /* MoodsTableViewController.swift */; };
 		81C660AA2025CCFA00DD3515 /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660A92025CCFA00DD3515 /* Managed.swift */; };
 		81C660AD2025DA2D00DD3515 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660AC2025DA2D00DD3515 /* TableViewDataSource.swift */; };
+		81C660AF2025E55000DD3515 /* MoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660AE2025E55000DD3515 /* MoodTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		81C660A42025C72100DD3515 /* MoodsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodsTableViewController.swift; sourceTree = "<group>"; };
 		81C660A92025CCFA00DD3515 /* Managed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managed.swift; sourceTree = "<group>"; };
 		81C660AC2025DA2D00DD3515 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		81C660AE2025E55000DD3515 /* MoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				81C66084201F9A3F00DD3515 /* LaunchScreen.storyboard */,
 				81C66082201F9A3F00DD3515 /* Assets.xcassets */,
 				81C6607F201F9A3F00DD3515 /* Main.storyboard */,
+				81C660AE2025E55000DD3515 /* MoodTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				81C6607C201F9A3F00DD3515 /* AppDelegate.swift in Sources */,
 				81C660AA2025CCFA00DD3515 /* Managed.swift in Sources */,
 				81C6609E2025A41200DD3515 /* MoodyStack.swift in Sources */,
+				81C660AF2025E55000DD3515 /* MoodTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

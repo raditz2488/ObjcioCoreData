@@ -11,6 +11,7 @@ import CoreData
 
 class MoodsTableViewController: UITableViewController {
     var managedObjectContext: NSManagedObjectContext!
+    fileprivate var dataSource: TableViewDataSource<MoodsTableViewController>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,5 +23,13 @@ class MoodsTableViewController: UITableViewController {
         request.fetchBatchSize = 20
         request.returnsObjectsAsFaults = false
         let frc = NSFetchedResultsController(fetchRequest: request, managedObjectContext: managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
+        dataSource = TableViewDataSource(tableView: tableView, cellIdentifier: "MoodCell", fetchedResultsController: frc, delegate: self)
+        
+    }
+}
+
+extension MoodsTableViewController: TableViewDataSourceDelegate {
+    func configure(_ cell: MoodTableViewCell, for object: Mood) {
+        
     }
 }
