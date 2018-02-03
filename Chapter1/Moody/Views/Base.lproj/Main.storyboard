@@ -151,19 +151,47 @@
             </objects>
             <point key="canvasLocation" x="2438" y="-112"/>
         </scene>
-        <!--View Controller-->
+        <!--Camera View Controller-->
         <scene sceneID="wka-hB-7Vc">
             <objects>
-                <viewController id="1Zt-Bx-vUQ" sceneMemberID="viewController">
+                <viewController id="1Zt-Bx-vUQ" customClass="CameraViewController" customModule="Moody" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="upQ-K5-Xg3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JrV-Ib-OMi" customClass="CameraView" customModule="Moody" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="772-eo-0d4">
+                                        <rect key="frame" x="167.5" y="182" width="39" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="772-eo-0d4" firstAttribute="centerX" secondItem="JrV-Ib-OMi" secondAttribute="centerX" id="LAp-Ju-3ie"/>
+                                    <constraint firstAttribute="bottom" secondItem="772-eo-0d4" secondAttribute="bottom" constant="8" id="MHq-2G-qqq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="JrV-Ib-OMi" secondAttribute="bottom" id="Lvj-9z-6ej"/>
+                            <constraint firstItem="JrV-Ib-OMi" firstAttribute="leading" secondItem="upQ-K5-Xg3" secondAttribute="leading" id="SBd-C0-XdF"/>
+                            <constraint firstAttribute="trailing" secondItem="JrV-Ib-OMi" secondAttribute="trailing" id="YiM-0o-NXE"/>
+                            <constraint firstItem="JrV-Ib-OMi" firstAttribute="top" secondItem="upQ-K5-Xg3" secondAttribute="top" id="bf2-9c-eQH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cameraView" destination="JrV-Ib-OMi" id="tqk-ib-ykH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rKd-WY-D6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1681" y="519"/>
+            <point key="canvasLocation" x="1680.8" y="518.59070464767615"/>
         </scene>
     </scenes>
 </document>
