@@ -24,6 +24,10 @@
 		81C660B12025E8A700DD3515 /* MoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660B02025E8A700DD3515 /* MoodView.swift */; };
 		81C660B42025E8FD00DD3515 /* Utitlities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660B32025E8FD00DD3515 /* Utitlities.swift */; };
 		81C660B62025F62200DD3515 /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660B52025F62200DD3515 /* NSManagedObjectContext+Extensions.swift */; };
+		81C660B82025FD0300DD3515 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660B72025FD0200DD3515 /* CameraViewController.swift */; };
+		81C660BA2025FD4C00DD3515 /* CaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660B92025FD4C00DD3515 /* CaptureSession.swift */; };
+		81C660BC2025FD9600DD3515 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660BB2025FD9600DD3515 /* CameraView.swift */; };
+		81C660C02025FE4200DD3515 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660BF2025FE4200DD3515 /* Localizable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,10 @@
 		81C660B02025E8A700DD3515 /* MoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodView.swift; sourceTree = "<group>"; };
 		81C660B32025E8FD00DD3515 /* Utitlities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utitlities.swift; sourceTree = "<group>"; };
 		81C660B52025F62200DD3515 /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
+		81C660B72025FD0200DD3515 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		81C660B92025FD4C00DD3515 /* CaptureSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSession.swift; sourceTree = "<group>"; };
+		81C660BB2025FD9600DD3515 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		81C660BF2025FE4200DD3515 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 		81C6606F201F9A3F00DD3515 = {
 			isa = PBXGroup;
 			children = (
+				81C660BD2025FE2900DD3515 /* Resources */,
 				81C660A12025C47900DD3515 /* Helpers */,
 				81C66090201F9AA200DD3515 /* CoreData */,
 				81C6608F201F9A8F00DD3515 /* Controllers */,
@@ -104,6 +113,7 @@
 				81C6607F201F9A3F00DD3515 /* Main.storyboard */,
 				81C660AE2025E55000DD3515 /* MoodTableViewCell.swift */,
 				81C660B02025E8A700DD3515 /* MoodView.swift */,
+				81C660BB2025FD9600DD3515 /* CameraView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -115,6 +125,7 @@
 				81C6607D201F9A3F00DD3515 /* ViewController.swift */,
 				81C6609F2025ACEB00DD3515 /* RootViewController.swift */,
 				81C660A42025C72100DD3515 /* MoodsTableViewController.swift */,
+				81C660B72025FD0200DD3515 /* CameraViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -184,8 +195,25 @@
 			isa = PBXGroup;
 			children = (
 				81C660B32025E8FD00DD3515 /* Utitlities.swift */,
+				81C660B92025FD4C00DD3515 /* CaptureSession.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		81C660BD2025FE2900DD3515 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				81C660BE2025FE3200DD3515 /* Strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		81C660BE2025FE3200DD3515 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				81C660BF2025FE4200DD3515 /* Localizable.swift */,
+			);
+			path = Strings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,12 +295,16 @@
 				81C660A02025ACEB00DD3515 /* RootViewController.swift in Sources */,
 				81C660A32025C48F00DD3515 /* SegueHandler.swift in Sources */,
 				81C66093201F9B0700DD3515 /* Moody.xcdatamodeld in Sources */,
+				81C660BA2025FD4C00DD3515 /* CaptureSession.swift in Sources */,
 				81C660AD2025DA2D00DD3515 /* TableViewDataSource.swift in Sources */,
 				81C660B12025E8A700DD3515 /* MoodView.swift in Sources */,
 				81C6607C201F9A3F00DD3515 /* AppDelegate.swift in Sources */,
 				81C660AA2025CCFA00DD3515 /* Managed.swift in Sources */,
+				81C660BC2025FD9600DD3515 /* CameraView.swift in Sources */,
+				81C660B82025FD0300DD3515 /* CameraViewController.swift in Sources */,
 				81C6609E2025A41200DD3515 /* MoodyStack.swift in Sources */,
 				81C660AF2025E55000DD3515 /* MoodTableViewCell.swift in Sources */,
+				81C660C02025FE4200DD3515 /* Localizable.swift in Sources */,
 				81C660B42025E8FD00DD3515 /* Utitlities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
