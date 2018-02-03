@@ -13,6 +13,8 @@
 		81C66083201F9A3F00DD3515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C66082201F9A3F00DD3515 /* Assets.xcassets */; };
 		81C66086201F9A3F00DD3515 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C66084201F9A3F00DD3515 /* LaunchScreen.storyboard */; };
 		81C66093201F9B0700DD3515 /* Moody.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 81C66091201F9B0700DD3515 /* Moody.xcdatamodeld */; };
+		81C6609B20259F3100DD3515 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C6609A20259F3100DD3515 /* Mood.swift */; };
+		81C6609E2025A41200DD3515 /* MoodyStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C6609D2025A41200DD3515 /* MoodyStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		81C66085201F9A3F00DD3515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81C66087201F9A3F00DD3515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81C66092201F9B0700DD3515 /* Moody.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Moody.xcdatamodel; sourceTree = "<group>"; };
+		81C6609A20259F3100DD3515 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		81C6609D2025A41200DD3515 /* MoodyStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +98,35 @@
 		81C66090201F9AA200DD3515 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				81C66091201F9B0700DD3515 /* Moody.xcdatamodeld */,
+				81C6609C2025A38700DD3515 /* Stack */,
+				81C6609920259E3B00DD3515 /* Data Model */,
+				81C6609820259E2500DD3515 /* Managed Objects */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		81C6609820259E2500DD3515 /* Managed Objects */ = {
+			isa = PBXGroup;
+			children = (
+				81C6609A20259F3100DD3515 /* Mood.swift */,
+			);
+			path = "Managed Objects";
+			sourceTree = "<group>";
+		};
+		81C6609920259E3B00DD3515 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				81C66091201F9B0700DD3515 /* Moody.xcdatamodeld */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		81C6609C2025A38700DD3515 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				81C6609D2025A41200DD3515 /* MoodyStack.swift */,
+			);
+			path = Stack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,9 +201,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C6609B20259F3100DD3515 /* Mood.swift in Sources */,
 				81C6607E201F9A3F00DD3515 /* ViewController.swift in Sources */,
 				81C66093201F9B0700DD3515 /* Moody.xcdatamodeld in Sources */,
 				81C6607C201F9A3F00DD3515 /* AppDelegate.swift in Sources */,
+				81C6609E2025A41200DD3515 /* MoodyStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

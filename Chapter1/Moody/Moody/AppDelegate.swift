@@ -7,15 +7,20 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
 
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    var persistentContainer: NSPersistentContainer!
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        createMoodyContainer { (container) in
+            self.persistentContainer = container
+            
+        }
         return true
     }
 
