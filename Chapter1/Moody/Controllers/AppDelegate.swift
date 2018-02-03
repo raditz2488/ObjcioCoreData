@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        printDocDirectoryPath()
         createMoodyContainer { (container) in
             self.persistentContainer = container
             let storyboard = self.window?.rootViewController?.storyboard
@@ -29,3 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
+func printDocDirectoryPath() {
+    let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
+    print("\nDocDirPath:\(path)")
+}
