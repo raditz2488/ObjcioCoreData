@@ -30,6 +30,6 @@ class MoodsTableViewController: UITableViewController {
 
 extension MoodsTableViewController: TableViewDataSourceDelegate {
     func configure(_ cell: MoodTableViewCell, for object: Mood) {
-        
+        cell.configure(for: object)
     }
 }

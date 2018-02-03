@@ -21,6 +21,8 @@
 		81C660AA2025CCFA00DD3515 /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660A92025CCFA00DD3515 /* Managed.swift */; };
 		81C660AD2025DA2D00DD3515 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660AC2025DA2D00DD3515 /* TableViewDataSource.swift */; };
 		81C660AF2025E55000DD3515 /* MoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660AE2025E55000DD3515 /* MoodTableViewCell.swift */; };
+		81C660B12025E8A700DD3515 /* MoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660B02025E8A700DD3515 /* MoodView.swift */; };
+		81C660B42025E8FD00DD3515 /* Utitlities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660B32025E8FD00DD3515 /* Utitlities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		81C660A92025CCFA00DD3515 /* Managed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managed.swift; sourceTree = "<group>"; };
 		81C660AC2025DA2D00DD3515 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		81C660AE2025E55000DD3515 /* MoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTableViewCell.swift; sourceTree = "<group>"; };
+		81C660B02025E8A700DD3515 /* MoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodView.swift; sourceTree = "<group>"; };
+		81C660B32025E8FD00DD3515 /* Utitlities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utitlities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +96,12 @@
 		81C6608E201F9A8300DD3515 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				81C660B22025E8EA00DD3515 /* Helpers */,
 				81C66084201F9A3F00DD3515 /* LaunchScreen.storyboard */,
 				81C66082201F9A3F00DD3515 /* Assets.xcassets */,
 				81C6607F201F9A3F00DD3515 /* Main.storyboard */,
 				81C660AE2025E55000DD3515 /* MoodTableViewCell.swift */,
+				81C660B02025E8A700DD3515 /* MoodView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +173,14 @@
 			isa = PBXGroup;
 			children = (
 				81C660AC2025DA2D00DD3515 /* TableViewDataSource.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		81C660B22025E8EA00DD3515 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				81C660B32025E8FD00DD3515 /* Utitlities.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -250,10 +264,12 @@
 				81C660A32025C48F00DD3515 /* SegueHandler.swift in Sources */,
 				81C66093201F9B0700DD3515 /* Moody.xcdatamodeld in Sources */,
 				81C660AD2025DA2D00DD3515 /* TableViewDataSource.swift in Sources */,
+				81C660B12025E8A700DD3515 /* MoodView.swift in Sources */,
 				81C6607C201F9A3F00DD3515 /* AppDelegate.swift in Sources */,
 				81C660AA2025CCFA00DD3515 /* Managed.swift in Sources */,
 				81C6609E2025A41200DD3515 /* MoodyStack.swift in Sources */,
 				81C660AF2025E55000DD3515 /* MoodTableViewCell.swift in Sources */,
+				81C660B42025E8FD00DD3515 /* Utitlities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

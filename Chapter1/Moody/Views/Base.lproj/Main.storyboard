@@ -76,13 +76,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="L3O-jJ-Cjh">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoodCell" rowHeight="90" id="L3O-jJ-Cjh" customClass="MoodTableViewCell" customModule="Moody" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L3O-jJ-Cjh" id="or1-mL-UYE">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A6L-rD-pK4" customClass="MoodView" customModule="Moody" customModuleProvider="target">
+                                            <rect key="frame" x="286" y="0.0" width="89" height="89"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="A6L-rD-pK4" secondAttribute="height" multiplier="1:1" id="ZDf-Ab-HAI"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M30-Me-sNX">
+                                            <rect key="frame" x="15" y="34" width="256" height="20.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFg-gw-0HD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="256" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="hFg-gw-0HD" secondAttribute="trailing" id="6Xk-5A-lTn"/>
+                                                <constraint firstAttribute="bottom" secondItem="hFg-gw-0HD" secondAttribute="bottom" id="6mh-Qz-Bfp"/>
+                                                <constraint firstItem="hFg-gw-0HD" firstAttribute="top" secondItem="M30-Me-sNX" secondAttribute="top" id="Zg0-td-SjL"/>
+                                                <constraint firstItem="hFg-gw-0HD" firstAttribute="leading" secondItem="M30-Me-sNX" secondAttribute="leading" id="n9q-zP-9ux"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="M30-Me-sNX" firstAttribute="centerY" secondItem="or1-mL-UYE" secondAttribute="centerY" id="9YA-5e-Psk"/>
+                                        <constraint firstItem="A6L-rD-pK4" firstAttribute="leading" secondItem="M30-Me-sNX" secondAttribute="trailing" constant="15" id="NE8-7L-z4m"/>
+                                        <constraint firstAttribute="trailing" secondItem="A6L-rD-pK4" secondAttribute="trailing" id="PEH-rs-5oG"/>
+                                        <constraint firstItem="M30-Me-sNX" firstAttribute="leading" secondItem="or1-mL-UYE" secondAttribute="leading" constant="15" id="gCc-Ud-Sz0"/>
+                                        <constraint firstAttribute="bottom" secondItem="A6L-rD-pK4" secondAttribute="bottom" constant="0.5" id="uen-qX-I3j"/>
+                                        <constraint firstItem="A6L-rD-pK4" firstAttribute="top" secondItem="or1-mL-UYE" secondAttribute="top" id="wli-gn-etv"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="label" destination="hFg-gw-0HD" id="39w-bN-buo"/>
+                                    <outlet property="moodView" destination="A6L-rD-pK4" id="1KS-27-58h"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -94,7 +133,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y4M-Lk-MCr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3170" y="-112"/>
+            <point key="canvasLocation" x="3208.8000000000002" y="-112.44377811094454"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VfV-Dd-1in">
