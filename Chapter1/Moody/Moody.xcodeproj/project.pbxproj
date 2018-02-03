@@ -19,6 +19,7 @@
 		81C660A32025C48F00DD3515 /* SegueHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660A22025C48F00DD3515 /* SegueHandler.swift */; };
 		81C660A52025C72100DD3515 /* MoodsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660A42025C72100DD3515 /* MoodsTableViewController.swift */; };
 		81C660AA2025CCFA00DD3515 /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660A92025CCFA00DD3515 /* Managed.swift */; };
+		81C660AD2025DA2D00DD3515 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660AC2025DA2D00DD3515 /* TableViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		81C660A22025C48F00DD3515 /* SegueHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueHandler.swift; sourceTree = "<group>"; };
 		81C660A42025C72100DD3515 /* MoodsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodsTableViewController.swift; sourceTree = "<group>"; };
 		81C660A92025CCFA00DD3515 /* Managed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managed.swift; sourceTree = "<group>"; };
+		81C660AC2025DA2D00DD3515 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		81C66090201F9AA200DD3515 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				81C660AB2025DA0D00DD3515 /* Helpers */,
 				81C6609C2025A38700DD3515 /* Stack */,
 				81C6609920259E3B00DD3515 /* Data Model */,
 				81C6609820259E2500DD3515 /* Managed Objects */,
@@ -153,6 +156,14 @@
 			isa = PBXGroup;
 			children = (
 				81C660A92025CCFA00DD3515 /* Managed.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		81C660AB2025DA0D00DD3515 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				81C660AC2025DA2D00DD3515 /* TableViewDataSource.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -235,6 +246,7 @@
 				81C660A02025ACEB00DD3515 /* RootViewController.swift in Sources */,
 				81C660A32025C48F00DD3515 /* SegueHandler.swift in Sources */,
 				81C66093201F9B0700DD3515 /* Moody.xcdatamodeld in Sources */,
+				81C660AD2025DA2D00DD3515 /* TableViewDataSource.swift in Sources */,
 				81C6607C201F9A3F00DD3515 /* AppDelegate.swift in Sources */,
 				81C660AA2025CCFA00DD3515 /* Managed.swift in Sources */,
 				81C6609E2025A41200DD3515 /* MoodyStack.swift in Sources */,
