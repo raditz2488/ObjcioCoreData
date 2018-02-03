@@ -15,7 +15,7 @@ final class Mood: NSManagedObject {
     
     static func insert(into context: NSManagedObjectContext, image: UIImage) -> Mood {
         let mood: Mood = context.insertObject()
-        mood.colors = []
+        mood.colors = image.moodColors
         mood.date = Date()
         return mood
     }
@@ -24,5 +24,17 @@ final class Mood: NSManagedObject {
 extension Mood: Managed {
     static var defaultSortDescriptors: [NSSortDescriptor] {
         return [NSSortDescriptor(key: #keyPath(date), ascending: false)]
+    }
+}
+
+private let MaxColors = 8
+
+extension UIImage {
+    fileprivate var moodColors: [UIColor] {
+        var colors: [UIColor] = []
+        for c in dominantColors(.Moody) where colors.count < MaxColors {
+            colors.append(c)
+        }
+        return colors
     }
 }

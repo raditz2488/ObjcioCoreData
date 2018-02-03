@@ -37,7 +37,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EhK-3b-y4T">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="456"/>
                                 <connections>
-                                    <segue destination="uYy-vF-kYd" kind="embed" id="OCP-bP-CUp"/>
+                                    <segue destination="uYy-vF-kYd" kind="embed" identifier="embedNAvigationController" id="OCP-bP-CUp"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsS-Wl-20A">
@@ -46,7 +46,7 @@
                                     <constraint firstAttribute="width" secondItem="hsS-Wl-20A" secondAttribute="height" multiplier="16:9" id="4ah-vr-SLv"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="1Zt-Bx-vUQ" kind="embed" id="PoT-PT-mv7"/>
+                                    <segue destination="1Zt-Bx-vUQ" kind="embed" identifier="embedCamera" id="PoT-PT-mv7"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -175,6 +175,9 @@
                                     <constraint firstItem="772-eo-0d4" firstAttribute="centerX" secondItem="JrV-Ib-OMi" secondAttribute="centerX" id="LAp-Ju-3ie"/>
                                     <constraint firstAttribute="bottom" secondItem="772-eo-0d4" secondAttribute="bottom" constant="8" id="MHq-2G-qqq"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="label" destination="772-eo-0d4" id="gMY-0B-sTC"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

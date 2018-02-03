@@ -16,13 +16,25 @@ class RootViewController: UIViewController, SegueHandler {
     }
     
     var managedObjectContext: NSManagedObjectContext!
+    fileprivate var cameraViewController: CameraViewController?
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segueIdentifier(for: segue) {
         case .embedNavigation:
             guard let nc = segue.destination as? UINavigationController, let vc = nc.viewControllers.first as? MoodsTableViewController else { fatalError("wrong view controller type") }
             vc.managedObjectContext = managedObjectContext
-        case .embedCamera: break
+        case .embedCamera:
+            guard let cameraVC = segue.destination as? CameraViewController else { fatalError("must be camera view controller") }
+            cameraViewController = cameraVC
+            cameraViewController?.delegate = self
+        }
+    }
+}
+
+extension RootViewController: CameraViewControllerDelegate {
+    func didCapture(_ image: UIImage) {
+        managedObjectContext.performChanges {
+            _ = Mood.insert(into: self.managedObjectContext, image: image)
         }
     }
 }

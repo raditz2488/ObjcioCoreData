@@ -41,78 +41,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoreData/Stack/MoodyStack.swift"
-            timestampString = "539344235.962762"
+            filePath = "Views/CameraView.swift"
+            timestampString = "539366518.259914"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "createMoodyContainer(completion:)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CoreData/Stack/MoodyStack.swift"
-            timestampString = "539344235.962904"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "createMoodyContainer(completion:)"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Moody.createMoodyContainer(completion: (__ObjC.NSPersistentContainer) -&gt; ()) -&gt; ()"
-                  moduleName = "Moody"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pranav/Documents/ProgrammingTuts/iOS/Objcio/GitRepo/Chapter1/Moody/CoreData/Stack/MoodyStack.swift"
-                  timestampString = "539345328.110073"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "95">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__ObjC.NSPersistentStoreDescription, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Moody.createMoodyContainer(completion: (__ObjC.NSPersistentContainer) -&gt; ()) -&gt; ()"
-                  moduleName = "Moody"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pranav/Documents/ProgrammingTuts/iOS/Objcio/GitRepo/Chapter1/Moody/CoreData/Stack/MoodyStack.swift"
-                  timestampString = "539345328.114324"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "97">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CoreData/Stack/MoodyStack.swift"
-            timestampString = "539344319.926667"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "createMoodyContainer(completion:)"
-            landmarkType = "9">
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "authorized"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
