@@ -23,6 +23,7 @@
 		81C660AF2025E55000DD3515 /* MoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660AE2025E55000DD3515 /* MoodTableViewCell.swift */; };
 		81C660B12025E8A700DD3515 /* MoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660B02025E8A700DD3515 /* MoodView.swift */; };
 		81C660B42025E8FD00DD3515 /* Utitlities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660B32025E8FD00DD3515 /* Utitlities.swift */; };
+		81C660B62025F62200DD3515 /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660B52025F62200DD3515 /* NSManagedObjectContext+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		81C660AE2025E55000DD3515 /* MoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTableViewCell.swift; sourceTree = "<group>"; };
 		81C660B02025E8A700DD3515 /* MoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodView.swift; sourceTree = "<group>"; };
 		81C660B32025E8FD00DD3515 /* Utitlities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utitlities.swift; sourceTree = "<group>"; };
+		81C660B52025F62200DD3515 /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				81C660AC2025DA2D00DD3515 /* TableViewDataSource.swift */,
+				81C660B52025F62200DD3515 /* NSManagedObjectContext+Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81C6609B20259F3100DD3515 /* Mood.swift in Sources */,
+				81C660B62025F62200DD3515 /* NSManagedObjectContext+Extensions.swift in Sources */,
 				81C6607E201F9A3F00DD3515 /* ViewController.swift in Sources */,
 				81C660A52025C72100DD3515 /* MoodsTableViewController.swift in Sources */,
 				81C660A02025ACEB00DD3515 /* RootViewController.swift in Sources */,
