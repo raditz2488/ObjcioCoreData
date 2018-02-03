@@ -15,6 +15,7 @@
 		81C66093201F9B0700DD3515 /* Moody.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 81C66091201F9B0700DD3515 /* Moody.xcdatamodeld */; };
 		81C6609B20259F3100DD3515 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C6609A20259F3100DD3515 /* Mood.swift */; };
 		81C6609E2025A41200DD3515 /* MoodyStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C6609D2025A41200DD3515 /* MoodyStack.swift */; };
+		81C660A02025ACEB00DD3515 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C6609F2025ACEB00DD3515 /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		81C66092201F9B0700DD3515 /* Moody.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Moody.xcdatamodel; sourceTree = "<group>"; };
 		81C6609A20259F3100DD3515 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		81C6609D2025A41200DD3515 /* MoodyStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyStack.swift; sourceTree = "<group>"; };
+		81C6609F2025ACEB00DD3515 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		81C6608F201F9A8F00DD3515 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				81C6609F2025ACEB00DD3515 /* RootViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			files = (
 				81C6609B20259F3100DD3515 /* Mood.swift in Sources */,
 				81C6607E201F9A3F00DD3515 /* ViewController.swift in Sources */,
+				81C660A02025ACEB00DD3515 /* RootViewController.swift in Sources */,
 				81C66093201F9B0700DD3515 /* Moody.xcdatamodeld in Sources */,
 				81C6607C201F9A3F00DD3515 /* AppDelegate.swift in Sources */,
 				81C6609E2025A41200DD3515 /* MoodyStack.swift in Sources */,
