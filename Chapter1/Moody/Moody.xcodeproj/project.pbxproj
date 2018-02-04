@@ -37,6 +37,9 @@
 		81C660E720260F9D00DD3515 /* PlatformExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660DE20260F9D00DD3515 /* PlatformExtensions.swift */; };
 		81C660E820260F9D00DD3515 /* ColorSpaceConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660E020260F9D00DD3515 /* ColorSpaceConversion.swift */; };
 		81C660ED2026125700DD3515 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81C660EF2026125700DD3515 /* Localizable.strings */; };
+		81C660F2202622DC00DD3515 /* MoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660F1202622DC00DD3515 /* MoodDetailViewController.swift */; };
+		81C660F42026289A00DD3515 /* ManagedObjectObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660F32026289A00DD3515 /* ManagedObjectObserver.swift */; };
+		81C660F620262C7900DD3515 /* NSManagedObjectContext+Observers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C660F520262C7900DD3515 /* NSManagedObjectContext+Observers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +80,9 @@
 		81C660EA2026108700DD3515 /* Moody-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Moody-Bridging-Header.h"; sourceTree = "<group>"; };
 		81C660EE2026125700DD3515 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		81C660F02026126B00DD3515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		81C660F1202622DC00DD3515 /* MoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDetailViewController.swift; sourceTree = "<group>"; };
+		81C660F32026289A00DD3515 /* ManagedObjectObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectObserver.swift; sourceTree = "<group>"; };
+		81C660F520262C7900DD3515 /* NSManagedObjectContext+Observers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Observers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +156,7 @@
 				81C6609F2025ACEB00DD3515 /* RootViewController.swift */,
 				81C660A42025C72100DD3515 /* MoodsTableViewController.swift */,
 				81C660B72025FD0200DD3515 /* CameraViewController.swift */,
+				81C660F1202622DC00DD3515 /* MoodDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -203,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				81C660A92025CCFA00DD3515 /* Managed.swift */,
+				81C660F32026289A00DD3515 /* ManagedObjectObserver.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -212,6 +220,7 @@
 			children = (
 				81C660AC2025DA2D00DD3515 /* TableViewDataSource.swift */,
 				81C660B52025F62200DD3515 /* NSManagedObjectContext+Extensions.swift */,
+				81C660F520262C7900DD3515 /* NSManagedObjectContext+Observers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -343,6 +352,7 @@
 			files = (
 				81C6609B20259F3100DD3515 /* Mood.swift in Sources */,
 				81C660E520260F9D00DD3515 /* Memoization.swift in Sources */,
+				81C660F42026289A00DD3515 /* ManagedObjectObserver.swift in Sources */,
 				81C660E620260F9D00DD3515 /* ColorDifference.swift in Sources */,
 				81C660E420260F9D00DD3515 /* DominantColors.swift in Sources */,
 				81C660E220260F9D00DD3515 /* RandomNumbers.mm in Sources */,
@@ -359,10 +369,12 @@
 				81C660E320260F9D00DD3515 /* KMeans.swift in Sources */,
 				81C6607C201F9A3F00DD3515 /* AppDelegate.swift in Sources */,
 				81C660AA2025CCFA00DD3515 /* Managed.swift in Sources */,
+				81C660F620262C7900DD3515 /* NSManagedObjectContext+Observers.swift in Sources */,
 				81C660E820260F9D00DD3515 /* ColorSpaceConversion.swift in Sources */,
 				81C660BC2025FD9600DD3515 /* CameraView.swift in Sources */,
 				81C660B82025FD0300DD3515 /* CameraViewController.swift in Sources */,
 				81C660E120260F9D00DD3515 /* LABPixel+ClusteredType.swift in Sources */,
+				81C660F2202622DC00DD3515 /* MoodDetailViewController.swift in Sources */,
 				81C6609E2025A41200DD3515 /* MoodyStack.swift in Sources */,
 				81C660AF2025E55000DD3515 /* MoodTableViewCell.swift in Sources */,
 				81C660C02025FE4200DD3515 /* Localizable.swift in Sources */,

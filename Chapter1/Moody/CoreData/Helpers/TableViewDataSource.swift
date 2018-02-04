@@ -24,6 +24,11 @@ class TableViewDataSource<Delegate: TableViewDataSourceDelegate>: NSObject, UITa
     fileprivate weak var delegate: Delegate!
     fileprivate let cellIdentifier: String
     
+    var selectedObject: Object? {
+        guard let indexPath = tableView.indexPathForSelectedRow else { return nil }
+        return objectAtIndexPath(indexPath)
+    }
+    
     required init(tableView: UITableView, cellIdentifier: String, fetchedResultsController: NSFetchedResultsController<Object>, delegate: Delegate) {
         self.tableView = tableView
         self.cellIdentifier = cellIdentifier

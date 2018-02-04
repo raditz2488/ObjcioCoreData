@@ -121,6 +121,7 @@
                                 <connections>
                                     <outlet property="label" destination="hFg-gw-0HD" id="39w-bN-buo"/>
                                     <outlet property="moodView" destination="A6L-rD-pK4" id="1KS-27-58h"/>
+                                    <segue destination="XGV-zB-dCI" kind="show" identifier="showMoodDetail" id="YmJ-Li-xX3"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -134,6 +135,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y4M-Lk-MCr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3208.8000000000002" y="-112.44377811094454"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="gns-YA-jai">
+            <objects>
+                <viewController id="XGV-zB-dCI" customClass="MoodDetailViewController" customModule="Moody" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nzL-PZ-FIW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="456"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="at1-ue-WHb" customClass="MoodView" customModule="Moody" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="40.5" width="375" height="375"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="at1-ue-WHb" secondAttribute="height" multiplier="1:1" id="cqi-hE-WEM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="at1-ue-WHb" firstAttribute="leading" secondItem="ViE-E4-LeG" secondAttribute="leading" id="4vV-i1-WVu"/>
+                            <constraint firstItem="at1-ue-WHb" firstAttribute="centerY" secondItem="nzL-PZ-FIW" secondAttribute="centerY" id="UZ9-tt-ZZX"/>
+                            <constraint firstItem="at1-ue-WHb" firstAttribute="trailing" secondItem="ViE-E4-LeG" secondAttribute="trailing" id="eKz-Oq-t4K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ViE-E4-LeG"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="ynY-Oo-lhG">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="fND-5I-Vs1">
+                            <connections>
+                                <action selector="deleteMood:" destination="XGV-zB-dCI" id="bka-4m-w0K"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="moodView" destination="at1-ue-WHb" id="Syi-Kl-Efi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WUI-qn-ggg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3994.4000000000001" y="-112.44377811094454"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VfV-Dd-1in">

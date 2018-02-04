@@ -9,7 +9,12 @@
 import UIKit
 import CoreData
 
-class MoodsTableViewController: UITableViewController {
+class MoodsTableViewController: UITableViewController, SegueHandler {
+    
+    enum SegueIdentifier: String {
+        case showMoodDetail = "showMoodDetail"
+    }
+    
     var managedObjectContext: NSManagedObjectContext!
     fileprivate var dataSource: TableViewDataSource<MoodsTableViewController>!
     
@@ -25,6 +30,15 @@ class MoodsTableViewController: UITableViewController {
         let frc = NSFetchedResultsController(fetchRequest: request, managedObjectContext: managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
         dataSource = TableViewDataSource(tableView: tableView, cellIdentifier: "MoodCell", fetchedResultsController: frc, delegate: self)
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segueIdentifier(for: segue) {
+        case .showMoodDetail:
+            guard let vc = segue.destination as? MoodDetailViewController else { fatalError("Wrong view controller type") }
+            guard let mood = dataSource.selectedObject else { fatalError("Showing detail, but no selected row?") }
+            vc.mood = mood
+        }
     }
 }
 
