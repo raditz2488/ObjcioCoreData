@@ -34,6 +34,5 @@ class MoodDetailViewController: UIViewController {
     
     fileprivate func updateViews() {
         moodView?.colors = mood.colors
-    }
-    
+    }    
 }

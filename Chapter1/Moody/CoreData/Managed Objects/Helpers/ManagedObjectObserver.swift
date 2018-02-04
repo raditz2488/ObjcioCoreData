@@ -23,8 +23,14 @@ final class ManagedObjectObserver {
         }
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(token)
+    }
+    
     fileprivate func changeType(of object: NSManagedObject, in note: ObjectsDidChangeNotification) -> ChangeType? {
         let deleted = note.deletedObjects.union(note.invalidatedObjects)
+        //containsObjectIdentical uses pointer comparison "===" operator
+        //Core Data guarantees there's exactly one single managed object per managed object context for any entry in the persistent store
         if note.invalidatedAllObjects || deleted.containsObjectIdentical(to: object) {
             return .delete
         }
