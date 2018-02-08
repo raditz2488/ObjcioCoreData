@@ -28,3 +28,9 @@ extension Continent: Managed {
         return [NSSortDescriptor(key: #keyPath(updatedAt), ascending: false)]
     }
 }
+
+extension Continent: LocalizedStringConvertible {
+    var localizedDescription: String {
+        return iso3166Code.localizedDescription
+    }
+}

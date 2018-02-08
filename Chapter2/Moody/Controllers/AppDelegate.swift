@@ -31,6 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 func printDocDirectoryPath() {
-    let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
+    let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
     print("\nDocDirPath:\(path)")
 }

@@ -8,10 +8,17 @@
 
 import UIKit
 import CoreData
+import CoreLocation
 
 final class Mood: NSManagedObject {
     @NSManaged fileprivate(set) var date: Date
     @NSManaged fileprivate(set) var colors: [UIColor]
+    @NSManaged fileprivate var latitude: NSNumber?
+    @NSManaged fileprivate var longitude: NSNumber?
+    public var location: CLLocation? {
+        guard let lat = latitude, let lon = longitude else { return nil }
+        return CLLocation(latitude: lat.doubleValue, longitude: lon.doubleValue)
+    }
     
     static func insert(into context: NSManagedObjectContext, image: UIImage) -> Mood {
         let mood: Mood = context.insertObject()

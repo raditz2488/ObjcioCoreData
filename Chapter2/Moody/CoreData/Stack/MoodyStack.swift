@@ -18,6 +18,7 @@ func createMoodyContainer(completion: @escaping (NSPersistentContainer) -> ()) {
     //1.Create container for Moody data model
     //Coredata uses the name we pass to look up the data model.
     //It should match the name of our .xcdatamodeld bundle
+    //This probably also creates the folder in which the database will exist
     let container = NSPersistentContainer(name: moodyDataModelFileName)
     
     //2.Load persistentStore for our data model
