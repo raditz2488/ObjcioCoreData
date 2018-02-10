@@ -21,7 +21,7 @@ final class Country: NSManagedObject {
         }
     }
     @NSManaged fileprivate var numericISO3166Code: Int16
-    @NSManaged fileprivate(set) var moods: Mood
+    @NSManaged fileprivate(set) var moods: Set<Mood>
     @NSManaged fileprivate(set) var continent: Continent?
 }
 
