@@ -15,6 +15,7 @@ final class Mood: NSManagedObject {
     @NSManaged fileprivate(set) var colors: [UIColor]
     @NSManaged fileprivate var latitude: NSNumber?
     @NSManaged fileprivate var longitude: NSNumber?
+    @NSManaged fileprivate(set) var country: Country
     public var location: CLLocation? {
         guard let lat = latitude, let lon = longitude else { return nil }
         return CLLocation(latitude: lat.doubleValue, longitude: lon.doubleValue)

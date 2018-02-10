@@ -21,6 +21,7 @@ final class Continent: NSManagedObject {
         }
     }
     @NSManaged fileprivate var numericISO3166Code: Int16
+    @NSManaged fileprivate(set) var countries: Set<Country>
 }
 
 extension Continent: Managed {
