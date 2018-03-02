@@ -21,10 +21,20 @@ final class Mood: NSManagedObject {
         return CLLocation(latitude: lat.doubleValue, longitude: lon.doubleValue)
     }
     
-    static func insert(into context: NSManagedObjectContext, image: UIImage) -> Mood {
+    static func insert(into context: NSManagedObjectContext, image: UIImage, location: CLLocation?, placemark: CLPlacemark?) -> Mood {
         let mood: Mood = context.insertObject()
         mood.colors = image.moodColors
         mood.date = Date()
+        if let coord = location?.coordinate {
+            mood.latitude = NSNumber(value: coord.latitude)
+            mood.longitude = NSNumber(value: coord.longitude)
+        }
+        
+        let isoCode = placemark?.isoCountryCode ?? ""
+        //Get ISO3166 Country enum from iso3166 string code
+        let isoCountry = ISO3166.Country.fromISO3166(isoCode)
+        //Find existing country managed object or create it and then set it as moods country
+        mood.country = Country.findOrCreate(for: isoCountry, in: context)
         return mood
     }
 }

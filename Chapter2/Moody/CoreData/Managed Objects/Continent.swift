@@ -22,6 +22,16 @@ final class Continent: NSManagedObject {
     }
     @NSManaged fileprivate var numericISO3166Code: Int16
     @NSManaged fileprivate(set) var countries: Set<Country>
+    
+    static func findOrCreateContinent(for isoCountry: ISO3166.Country, in context: NSManagedObjectContext) -> Continent? {
+        guard let iso3166 = ISO3166.Continent(country: isoCountry) else { return nil }
+        let predicate = NSPredicate(format: "%K == %d", #keyPath(numericISO3166Code), Int(iso3166.rawValue))
+        let continent = findOrCreate(in: context, matching: predicate) { (createdContinent) in
+            createdContinent.iso3166Code = iso3166
+            createdContinent.updatedAt = Date()
+        }
+        return continent
+    }
 }
 
 extension Continent: Managed {

@@ -23,6 +23,16 @@ final class Country: NSManagedObject {
     @NSManaged fileprivate var numericISO3166Code: Int16
     @NSManaged fileprivate(set) var moods: Set<Mood>
     @NSManaged fileprivate(set) var continent: Continent?
+    
+    static func findOrCreate(for isoCountry: ISO3166.Country, in context: NSManagedObjectContext) -> Country {
+        let predicate = NSPredicate(format: "%K == %d", #keyPath(numericISO3166Code), Int(isoCountry.rawValue))
+        let country = findOrCreate(in: context, matching: predicate) { (createdCountry) in
+            createdCountry.iso3166Code = isoCountry
+            createdCountry.updatedAt = Date()
+            createdCountry.continent = Continent.findOrCreateContinent(for: isoCountry, in: context)
+        }
+        return country
+    }
 }
 
 extension Country: Managed {

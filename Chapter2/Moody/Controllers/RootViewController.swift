@@ -34,7 +34,7 @@ class RootViewController: UIViewController, SegueHandler {
 extension RootViewController: CameraViewControllerDelegate {
     func didCapture(_ image: UIImage) {
         managedObjectContext.performChanges {
-            _ = Mood.insert(into: self.managedObjectContext, image: image)
+            _ = Mood.insert(into: self.managedObjectContext, image: image, location: nil, placemark: nil)
         }
     }
 }
