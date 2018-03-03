@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81C571C8204A8ADB009486BA /* RegionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C571C7204A8ADB009486BA /* RegionsTableViewController.swift */; };
+		81C571CA204A8D65009486BA /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C571C9204A8D65009486BA /* Region.swift */; };
+		81C571CC204A8F95009486BA /* RegionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C571CB204A8F95009486BA /* RegionTableViewCell.swift */; };
 		81C6607C201F9A3F00DD3515 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C6607B201F9A3F00DD3515 /* AppDelegate.swift */; };
 		81C6607E201F9A3F00DD3515 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C6607D201F9A3F00DD3515 /* ViewController.swift */; };
 		81C66081201F9A3F00DD3515 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C6607F201F9A3F00DD3515 /* Main.storyboard */; };
@@ -47,6 +50,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81C571C7204A8ADB009486BA /* RegionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsTableViewController.swift; sourceTree = "<group>"; };
+		81C571C9204A8D65009486BA /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		81C571CB204A8F95009486BA /* RegionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionTableViewCell.swift; sourceTree = "<group>"; };
 		81C66078201F9A3F00DD3515 /* Moody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moody.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81C6607B201F9A3F00DD3515 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81C6607D201F9A3F00DD3515 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +159,7 @@
 				81C660AE2025E55000DD3515 /* MoodTableViewCell.swift */,
 				81C660B02025E8A700DD3515 /* MoodView.swift */,
 				81C660BB2025FD9600DD3515 /* CameraView.swift */,
+				81C571CB204A8F95009486BA /* RegionTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,6 +173,7 @@
 				81C660A42025C72100DD3515 /* MoodsTableViewController.swift */,
 				81C660B72025FD0200DD3515 /* CameraViewController.swift */,
 				81C660F1202622DC00DD3515 /* MoodDetailViewController.swift */,
+				81C571C7204A8ADB009486BA /* RegionsTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -188,6 +196,7 @@
 				81C6609A20259F3100DD3515 /* Mood.swift */,
 				81C660F72026E37100DD3515 /* Country.swift */,
 				81C660FB2026E85400DD3515 /* Continent.swift */,
+				81C571C9204A8D65009486BA /* Region.swift */,
 			);
 			path = "Managed Objects";
 			sourceTree = "<group>";
@@ -375,10 +384,12 @@
 				81C660A02025ACEB00DD3515 /* RootViewController.swift in Sources */,
 				81C660A32025C48F00DD3515 /* SegueHandler.swift in Sources */,
 				81C66093201F9B0700DD3515 /* Moody.xcdatamodeld in Sources */,
+				81C571C8204A8ADB009486BA /* RegionsTableViewController.swift in Sources */,
 				81C660E720260F9D00DD3515 /* PlatformExtensions.swift in Sources */,
 				81C660BA2025FD4C00DD3515 /* CaptureSession.swift in Sources */,
 				81C660AD2025DA2D00DD3515 /* TableViewDataSource.swift in Sources */,
 				81C660B12025E8A700DD3515 /* MoodView.swift in Sources */,
+				81C571CA204A8D65009486BA /* Region.swift in Sources */,
 				81C660E320260F9D00DD3515 /* KMeans.swift in Sources */,
 				81C6607C201F9A3F00DD3515 /* AppDelegate.swift in Sources */,
 				81C660AA2025CCFA00DD3515 /* Managed.swift in Sources */,
@@ -387,6 +398,7 @@
 				81C660E820260F9D00DD3515 /* ColorSpaceConversion.swift in Sources */,
 				81C660BC2025FD9600DD3515 /* CameraView.swift in Sources */,
 				81C660B82025FD0300DD3515 /* CameraViewController.swift in Sources */,
+				81C571CC204A8F95009486BA /* RegionTableViewCell.swift in Sources */,
 				81C660E120260F9D00DD3515 /* LABPixel+ClusteredType.swift in Sources */,
 				81C660F2202622DC00DD3515 /* MoodDetailViewController.swift in Sources */,
 				81C6609E2025A41200DD3515 /* MoodyStack.swift in Sources */,

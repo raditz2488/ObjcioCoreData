@@ -12,6 +12,7 @@ enum LocalizedText: String {
     case cameraView_tapToCapture = "CameraView.tapToCapture"
     case cameraView_needAccess = "CameraView.needAccess"
     case mood_dateComponentFormat = "Mood.dateComponentFormat"
+    case regions_title = "Regions.title"
 }
 
 func localized(_ key: LocalizedText) -> String {

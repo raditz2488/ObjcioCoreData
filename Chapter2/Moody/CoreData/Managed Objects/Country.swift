@@ -33,6 +33,14 @@ final class Country: NSManagedObject {
         }
         return country
     }
+    
+    override func prepareForDeletion() {
+        guard let c = continent else { return }
+        //Filter list of countries associated with continent with not deleted and if that list is empty that means all object have been deleted. So we must delete the continent as we need it now more.
+        if c.countries.filter({ !$0.isDeleted }).isEmpty {
+            managedObjectContext?.delete(c)
+        }
+    }
 }
 
 extension Country: Managed {

@@ -37,6 +37,13 @@ final class Mood: NSManagedObject {
         mood.country = Country.findOrCreate(for: isoCountry, in: context)
         return mood
     }
+    
+    override func prepareForDeletion() {
+        //If all moods in the associated country are deleted we delete the country
+        if country.moods.filter({ !$0.isDeleted }).isEmpty {
+            managedObjectContext?.delete(country)
+        }
+    }
 }
 
 extension Mood: Managed {
