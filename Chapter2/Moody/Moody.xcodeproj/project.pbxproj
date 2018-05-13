@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8107206B20A7324400E4DE52 /* GeoLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107206A20A7324400E4DE52 /* GeoLocationController.swift */; };
+		8107206D20A73D8E00E4DE52 /* MoodSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107206C20A73D8E00E4DE52 /* MoodSource.swift */; };
 		81C571C8204A8ADB009486BA /* RegionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C571C7204A8ADB009486BA /* RegionsTableViewController.swift */; };
 		81C571CA204A8D65009486BA /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C571C9204A8D65009486BA /* Region.swift */; };
 		81C571CC204A8F95009486BA /* RegionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C571CB204A8F95009486BA /* RegionTableViewCell.swift */; };
@@ -50,6 +52,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8107206A20A7324400E4DE52 /* GeoLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocationController.swift; sourceTree = "<group>"; };
+		8107206C20A73D8E00E4DE52 /* MoodSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodSource.swift; sourceTree = "<group>"; };
 		81C571C7204A8ADB009486BA /* RegionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsTableViewController.swift; sourceTree = "<group>"; };
 		81C571C9204A8D65009486BA /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		81C571CB204A8F95009486BA /* RegionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionTableViewCell.swift; sourceTree = "<group>"; };
@@ -110,6 +114,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8107206920A7321A00E4DE52 /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				8107206A20A7324400E4DE52 /* GeoLocationController.swift */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
 		81C6606F201F9A3F00DD3515 = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +232,7 @@
 		81C660A12025C47900DD3515 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				8107206920A7321A00E4DE52 /* Locations */,
 				81C660D520260F9D00DD3515 /* DominantColor */,
 				81C660A22025C48F00DD3515 /* SegueHandler.swift */,
 			);
@@ -241,6 +254,7 @@
 				81C660AC2025DA2D00DD3515 /* TableViewDataSource.swift */,
 				81C660B52025F62200DD3515 /* NSManagedObjectContext+Extensions.swift */,
 				81C660F520262C7900DD3515 /* NSManagedObjectContext+Observers.swift */,
+				8107206C20A73D8E00E4DE52 /* MoodSource.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -388,6 +402,8 @@
 				81C660E720260F9D00DD3515 /* PlatformExtensions.swift in Sources */,
 				81C660BA2025FD4C00DD3515 /* CaptureSession.swift in Sources */,
 				81C660AD2025DA2D00DD3515 /* TableViewDataSource.swift in Sources */,
+				8107206D20A73D8E00E4DE52 /* MoodSource.swift in Sources */,
+				8107206B20A7324400E4DE52 /* GeoLocationController.swift in Sources */,
 				81C660B12025E8A700DD3515 /* MoodView.swift in Sources */,
 				81C571CA204A8D65009486BA /* Region.swift in Sources */,
 				81C660E320260F9D00DD3515 /* KMeans.swift in Sources */,

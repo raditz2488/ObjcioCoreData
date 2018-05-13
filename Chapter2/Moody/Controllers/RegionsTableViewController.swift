@@ -29,6 +29,7 @@ class RegionsTableViewController: UITableViewController, SegueHandler {
         switch segueIdentifier(for: segue) {
         case .showMoods:
             guard let region = dataSource?.selectedObject else { fatalError("No selection at segue?") }
+            vc.moodSource = MoodSource(region: region)
         }
     }
     

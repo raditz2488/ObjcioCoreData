@@ -17,6 +17,12 @@ class RootViewController: UIViewController, SegueHandler {
     
     var managedObjectContext: NSManagedObjectContext!
     fileprivate var cameraViewController: CameraViewController?
+    fileprivate var geoLocationController: GeoLocationController!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        geoLocationController = GeoLocationController(delegate: self)
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segueIdentifier(for: segue) {
@@ -33,8 +39,16 @@ class RootViewController: UIViewController, SegueHandler {
 
 extension RootViewController: CameraViewControllerDelegate {
     func didCapture(_ image: UIImage) {
-        managedObjectContext.performChanges {
-            _ = Mood.insert(into: self.managedObjectContext, image: image, location: nil, placemark: nil)
+        geoLocationController.retrieveCurrentLocation { (location, placemark) in
+            self.managedObjectContext.performChanges {
+                _ = Mood.insert(into: self.managedObjectContext, image: image, location: location, placemark: placemark)
+            }
         }
+    }
+}
+
+extension RootViewController: GeoLocationControllerDelegate {
+    func geoLocationDidChangeAuthorizationStatus(authorized: Bool) {
+        
     }
 }

@@ -17,6 +17,16 @@ class MoodsTableViewController: UITableViewController, SegueHandler {
     
     var managedObjectContext: NSManagedObjectContext!
     fileprivate var dataSource: TableViewDataSource<MoodsTableViewController>!
+    fileprivate var observer: ManagedObjectObserver?
+    var moodSource: MoodSource! {
+        didSet {
+            guard let o = moodSource.managedObject else { return }
+            observer = ManagedObjectObserver(object: o, changeHandler: { [unowned self](type) in
+                guard type == .delete else { return }
+                let _ = self.navigationController?.popViewController(animated: true)
+            })
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +34,7 @@ class MoodsTableViewController: UITableViewController, SegueHandler {
     }
     
     fileprivate func setupTableView() {
-        let request = Mood.sortedFetchRequest
+        let request = Mood.sortedFetchRequest(with:moodSource.predicate)
         request.fetchBatchSize = 20
         request.returnsObjectsAsFaults = false
         let frc = NSFetchedResultsController(fetchRequest: request, managedObjectContext: managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
