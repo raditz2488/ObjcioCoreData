@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreData/Stack/MoodyStack.swift"
+            timestampString = "539804867.628255"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "createMoodyContainer(completion:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreData/Stack/MoodyStack.swift"
+            timestampString = "539804867.634985"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "createMoodyContainer(completion:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__ObjC.NSPersistentStoreDescription, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Moody.createMoodyContainer(completion: (__ObjC.NSPersistentContainer) -&gt; ()) -&gt; ()"
+                  moduleName = "Moody"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pranav/Documents/ProgrammingTuts/iOS/Objcio/GitRepo/Chapter2/Moody/CoreData/Stack/MoodyStack.swift"
+                  timestampString = "539718643.604346"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "219">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (__ObjC.NSPersistentStoreDescription, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Moody.createMoodyContainer(completion: (__ObjC.NSPersistentContainer) -&gt; ()) -&gt; ()"
+                  moduleName = "Moody"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pranav/Documents/ProgrammingTuts/iOS/Objcio/GitRepo/Chapter2/Moody/CoreData/Stack/MoodyStack.swift"
+                  timestampString = "539718643.6075391"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "22">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
