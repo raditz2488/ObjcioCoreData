@@ -21,5 +21,16 @@ extension Array {
         guard let x = first else { return nil }
         return (x, Array(self[1..<count]))
     }
+    
+    func sliced(size: Int) -> [[Iterator.Element]] {
+        var result: [[Iterator.Element]] = []
+        for idx in stride(from: startIndex, to: endIndex, by: size) {
+            let end = Swift.min(idx + size, endIndex)
+            result.append(Array(self[idx..<end]))
+        }
+        return result
+    }
 }
+
+
 

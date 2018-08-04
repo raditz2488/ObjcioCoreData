@@ -72,6 +72,14 @@ extension UIColor {
         getRed(&red, green: &green, blue: &blue, alpha: nil)
         return [UInt8(red * 255), UInt8(green * 255), UInt8(blue * 255)]
     }
+    
+    fileprivate convenience init?(rawData: [UInt8]) {
+        if rawData.count != 3 { return nil }
+        let red = CGFloat(rawData[0]) / 255
+        let green = CGFloat(rawData[1]) / 255
+        let blue = CGFloat(rawData[2]) / 255
+        self.init(red:red, green: green, blue: blue, alpha: 1.0)
+    }
 }
 
 extension Sequence where Iterator.Element == UIColor {
@@ -79,6 +87,25 @@ extension Sequence where Iterator.Element == UIColor {
         let rgbValues = flatMap{ $0.rgb }
         return rgbValues.withUnsafeBufferPointer {
             return Data(bytes: UnsafePointer<UInt8>($0.baseAddress!), count: $0.count)
+        }
+    }
+}
+
+extension Data {
+    public var moodColors: [UIColor]? {
+        guard count > 0 && count % 3 == 0 else { return nil }
+        var rgbValues = Array(repeating: UInt8(), count: count)
+        rgbValues.withUnsafeMutableBufferPointer { buffer in
+            let voidPointer = UnsafeMutableRawPointer(buffer.baseAddress)
+            let _ = withUnsafeBytes { bytes in
+                memcpy(voidPointer, bytes, count)
+            }
+        }
+        
+        let rgbSlices = rgbValues.sliced(size: 3)
+        return rgbSlices.map{ slice in
+            guard let color = UIColor(rawData: slice) else { fatalError("Cannot fail anyways as we know slice is of length 3") }
+            return color
         }
     }
 }
