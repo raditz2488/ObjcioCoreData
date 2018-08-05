@@ -15,6 +15,7 @@ enum MoodyStackErrors: String {
 let moodyDataModelFileName = "Moody"
 
 func createMoodyContainer(completion: @escaping (NSPersistentContainer) -> ()) {
+    Mood.registerValueTransformers()
     //1.Create container for Moody data model
     //Coredata uses the name we pass to look up the data model.
     //It should match the name of our .xcdatamodeld bundle

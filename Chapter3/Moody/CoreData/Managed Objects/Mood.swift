@@ -52,6 +52,24 @@ extension Mood: Managed {
     }
 }
 
+private let ColorsTransformerName = "ColorsTransformer"
+
+extension Mood {
+    static func registerValueTransformers() {
+        _ = __registerOnce
+    }
+    
+    fileprivate static let __registerOnce: () = {
+        ClosureValueTransformer.registerTransformer(withName: ColorsTransformerName, transform: { (colors: NSArray?) -> NSData? in
+            guard let colors = colors as? [UIColor] else { return nil }
+            return colors.moodData as NSData
+        }, reverseTransform: { (data: NSData?) -> NSArray? in
+            guard let moodColors = (data as Data?)?.moodColors else { return nil }
+            return NSArray(array: moodColors)
+        })
+    }()
+}
+
 private let MaxColors = 8
 
 extension UIImage {

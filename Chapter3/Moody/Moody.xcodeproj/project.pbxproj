@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8107206B20A7324400E4DE52 /* GeoLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107206A20A7324400E4DE52 /* GeoLocationController.swift */; };
 		8107206D20A73D8E00E4DE52 /* MoodSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107206C20A73D8E00E4DE52 /* MoodSource.swift */; };
+		815724112117395100AF19D4 /* ValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815724102117395100AF19D4 /* ValueTransformer.swift */; };
 		81C571C8204A8ADB009486BA /* RegionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C571C7204A8ADB009486BA /* RegionsTableViewController.swift */; };
 		81C571CA204A8D65009486BA /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C571C9204A8D65009486BA /* Region.swift */; };
 		81C571CC204A8F95009486BA /* RegionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C571CB204A8F95009486BA /* RegionTableViewCell.swift */; };
@@ -54,6 +55,7 @@
 /* Begin PBXFileReference section */
 		8107206A20A7324400E4DE52 /* GeoLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocationController.swift; sourceTree = "<group>"; };
 		8107206C20A73D8E00E4DE52 /* MoodSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodSource.swift; sourceTree = "<group>"; };
+		815724102117395100AF19D4 /* ValueTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueTransformer.swift; sourceTree = "<group>"; };
 		81C571C7204A8ADB009486BA /* RegionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsTableViewController.swift; sourceTree = "<group>"; };
 		81C571C9204A8D65009486BA /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		81C571CB204A8F95009486BA /* RegionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionTableViewCell.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				81C660B52025F62200DD3515 /* NSManagedObjectContext+Extensions.swift */,
 				81C660F520262C7900DD3515 /* NSManagedObjectContext+Observers.swift */,
 				8107206C20A73D8E00E4DE52 /* MoodSource.swift */,
+				815724102117395100AF19D4 /* ValueTransformer.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				81C6607C201F9A3F00DD3515 /* AppDelegate.swift in Sources */,
 				81C660AA2025CCFA00DD3515 /* Managed.swift in Sources */,
 				81C660F620262C7900DD3515 /* NSManagedObjectContext+Observers.swift in Sources */,
+				815724112117395100AF19D4 /* ValueTransformer.swift in Sources */,
 				81C660FE2026E9A200DD3515 /* LocalizedStringConvertible.swift in Sources */,
 				81C660E820260F9D00DD3515 /* ColorSpaceConversion.swift in Sources */,
 				81C660BC2025FD9600DD3515 /* CameraView.swift in Sources */,
