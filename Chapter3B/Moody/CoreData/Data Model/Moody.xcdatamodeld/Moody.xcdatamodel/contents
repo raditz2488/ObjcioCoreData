@@ -8,7 +8,8 @@
         <relationship name="moods" toMany="YES" deletionRule="Deny" destinationEntity="Mood" inverseName="country" inverseEntity="Mood" syncable="YES"/>
     </entity>
     <entity name="Mood" representedClassName=".Mood" syncable="YES">
-        <attribute name="colors" attributeType="Transformable" valueTransformerName="ColorsTransformer" syncable="YES"/>
+        <attribute name="colors" transient="YES" syncable="YES"/>
+        <attribute name="colorStorage" attributeType="Binary" syncable="YES"/>
         <attribute name="date" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
@@ -27,7 +28,7 @@
     <elements>
         <element name="Continent" positionX="-36" positionY="18" width="128" height="60"/>
         <element name="Country" positionX="-54" positionY="9" width="128" height="75"/>
-        <element name="Mood" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="Mood" positionX="-63" positionY="-18" width="128" height="135"/>
         <element name="Region" positionX="-18" positionY="45" width="128" height="75"/>
     </elements>
 </model>
