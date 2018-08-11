@@ -127,7 +127,7 @@ extension Sequence where Iterator.Element == UIColor {
     public var moodData: Data {
         let rgbValues = flatMap { $0.rgb }
         return rgbValues.withUnsafeBufferPointer {
-            return Data(bytes: UnsafePointer<UInt8>($0.baseAddress!),
+            return Data(bytes: $0.baseAddress!,
                         count: $0.count)
         }
     }
